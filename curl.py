@@ -1,11 +1,13 @@
 import requests
+import sys
 
-n = input("Pick Filename: ")
-file = open(n,"w")
+r = str(sys.argv[1])
+n = str(sys.argv[2])
 
-r = input("URL: ")
 r = requests.get(r)
 r = r.text
+
+file = open(n,"w")
 
 file.write(r + "\n")
 file.close()
