@@ -1,3 +1,6 @@
 import webbrowser
+import sys
 
-webbrowser.open("https://wikipedia.com/")
+url = str(sys.argv[1])
+
+webbrowser.open(url)
