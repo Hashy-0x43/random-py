@@ -1,0 +1,10 @@
+author_first = str(input("Author's First Name: "))
+author_last = str(input("Author's Last Name: "))
+title = str(input("Title of Article: "))
+publisher = str(input("Website/Publisher's Name: "))
+article_url = str(input("URL of Article: "))
+accessed_month = str(input("Month Accessed: "))
+accessed_day = str(input("Day Accessed: "))
+accessed_year = str(input("Year Accessed: "))
+
+print(f'{author_last}, {author_first}. "{title}" {publisher}, {article_url}. Accessed {accessed_day} {accessed_month} {accessed_year}.')
